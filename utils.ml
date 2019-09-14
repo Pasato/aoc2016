@@ -12,3 +12,5 @@ let linesToList fileName =
         match e with 
         | End_of_file -> !lines
         | _ -> raise e
+
+let stringToChars s = List.init (String.length s) (String.get s)
